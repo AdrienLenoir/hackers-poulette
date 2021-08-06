@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap");
+body {
+  background-color: #F0F0F0;
+  font-size: 18px;
+  font-family: "Bellota", cursive;
+}
+
+.contact-support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  min-height: 100vh;
+}
+.contact-support .logo-section, .contact-support .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 20px 0;
+}
+@media screen and (max-width: 1052px) {
+  .contact-support .logo-section, .contact-support .form-section {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+    padding: 50px 0;
+  }
+}
+.contact-support .logo-section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.contact-support .logo-section .logo {
+  width: 230px;
+  height: auto;
+}
+@media screen and (max-width: 550px) {
+  .contact-support .logo-section .logo {
+    width: 180px;
+  }
+}
+.contact-support .logo-section .page-title {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-support .form-section {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #303030;
+}
+.contact-support .form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 80%;
+}
+.contact-support .form-section form .error {
+  font-size: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: indianred;
+}
+.contact-support .form-section form .global-error {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.contact-support .form-section form .success {
+  font-size: 18px;
+  margin-bottom: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: lightgreen;
+}
+.contact-support .form-section form label, .contact-support .form-section form input, .contact-support .form-section form textarea, .contact-support .form-section form select {
+  display: block;
+  width: 100%;
+}
+.contact-support .form-section form input, .contact-support .form-section form textarea, .contact-support .form-section form select {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+}
+.contact-support .form-section form textarea {
+  resize: vertical;
+}
+.contact-support .form-section form .input-group:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contact-support .form-section form .input-group label {
+  color: #30B1B8;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.contact-support .form-section form .input-group input, .contact-support .form-section form .input-group select, .contact-support .form-section form .input-group textarea {
+  border: 1px solid #F0F0F0;
+  padding: 8px 10px;
+  background-color: transparent;
+  color: #F0F0F0;
+}
+.contact-support .form-section form .input-group input::-webkit-input-placeholder {
+  color: #cacaca;
+}
+.contact-support .form-section form .input-group input::-moz-placeholder {
+  color: #cacaca;
+}
+.contact-support .form-section form .input-group input:-ms-input-placeholder {
+  color: #cacaca;
+}
+.contact-support .form-section form .input-group input::-ms-input-placeholder {
+  color: #cacaca;
+}
+.contact-support .form-section form .input-group input::placeholder {
+  color: #cacaca;
+}
+.contact-support .form-section form .input-group input:focus, .contact-support .form-section form .input-group select:focus, .contact-support .form-section form .input-group textarea:focus {
+  border-color: #30B1B8;
+}
+.contact-support .form-section form .input-group-w-50 {
+  -ms-flex-preferred-size: calc(50% - 10px);
+      flex-basis: calc(50% - 10px);
+}
+@media screen and (max-width: 550px) {
+  .contact-support .form-section form .input-group-w-50 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+.contact-support .form-section form .input-group-w-100 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.contact-support .form-section form .button-group-right {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contact-support .form-section form .button-group-right button {
+  padding: 8px 20px;
+  min-width: 120px;
+  background-color: #30B1B8;
+  outline: none;
+  border: none;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  color: #F0F0F0;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-support .form-section form .button-group-right button:hover {
+  background-color: #258a90;
+}
+
+/* RESET CSS
+ * --------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td, span {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
